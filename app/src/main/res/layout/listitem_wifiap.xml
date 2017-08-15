@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!--wifiap_item_iv_rssi-->
+    <ImageView
+        android:id="@+id/wifiap_item_iv_rssi"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/wifiap_item_iv_rssi"
+        android:orientation="vertical">
+        <!--wifiap_item_tv_ssid-->
+        <TextView
+            android:id="@+id/wifiap_item_tv_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!--wifiap_item_tv_desc-->
+        <TextView
+            android:id="@+id/wifiap_item_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/hint_foreground_dark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 从服务器那边推送过来的消息需要显示在每一个列表项的最右边，用来提示用户-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommend_level"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

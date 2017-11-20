@@ -7,9 +7,8 @@ import android.net.wifi.WifiManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import java.util.ArrayList;
+
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 
 public class Wifi {
@@ -130,7 +129,7 @@ public class Wifi {
 		return true;
 	}
 	
-//根据优先级排序
+	//根据优先级排序
 	private static void sortByPriority(final List<WifiConfiguration> configurations) {
 		java.util.Collections.sort(configurations, new Comparator<WifiConfiguration>() {
 

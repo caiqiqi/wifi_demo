@@ -122,7 +122,7 @@ public class WifiScanActivity extends PreferenceActivity {
     }
 
     private void initWifiManager() {
-        mWifiManager = (WifiManager) getSystemService(WIFI_SERVICE);
+        mWifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
     }
 
     private void sendToServer() {
